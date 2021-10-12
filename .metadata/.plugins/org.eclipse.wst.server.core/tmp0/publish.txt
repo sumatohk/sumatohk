@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Sat Jun 29 15:04:47 CST 2019
+org.eclipse.jst.jee.server\:WebPortal=D\:\\tools\\tomcat8.5\\webapps\\WebPortal
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\USER\\.m2\\repository\\org\\springframework\\spring-web\\4.2.5.RELEASE\\spring-web-4.2.5.RELEASE.jar=D\:\\tools\\tomcat8.5\\webapps\\WebPortal\\WEB-INF\\lib\\spring-web-4.2.5.RELEASE.jar

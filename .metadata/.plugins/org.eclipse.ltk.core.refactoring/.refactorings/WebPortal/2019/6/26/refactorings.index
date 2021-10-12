@@ -1,0 +1,51 @@
+1561732669498	Rename type 'App'
+1561735314964	Copy file
+1561771250822	Delete element
+1561772349714	Copy file
+1561772361905	Delete element
+1561772867451	Rename package 'com.websystique.springmvc.configuration'
+1561772890132	Rename package 'com.websystique.springmvc.controller'
+1561772905782	Rename package 'com.gtl.web.springmvc.configuration'
+1561772936233	Rename package 'com.websystique.springmvc.converter'
+1561772968578	Rename package 'com.websystique.springmvc.dao'
+1561773037239	Rename package 'com.websystique.springmvc.service'
+1561773054783	Rename package 'com.gti.web.dao'
+1561773081370	Rename package 'com.gti.web.springmvc.configuration'
+1561773094509	Copy compilation unit
+1561773106775	Delete element
+1561773132976	Rename package 'com.gti.web.springmvc.converter'
+1561773155673	Rename package 'com.websystique.springmvc.model'
+1561773173814	Rename package 'com.websystique.springmvc.security'
+1561773985128	Rename package 'com.gti.configuration'
+1561774082016	Delete element
+1561776500620	Rename type 'AppConfig'
+1561777079543	Copy compilation unit
+1561777085675	Delete element
+1561777095724	Delete element
+1561777124968	Move compilation unit
+1561777132449	Delete element
+1561777500523	Rename resource 'web.xml'
+1561778489773	Rename resource 'web.xml.delete'
+1561778941484	Delete element
+1561779603743	Rename resource 'web.xml'
+1561779823177	Delete element
+1561779840239	Delete element
+1561779980635	Delete element
+1561780051854	Delete element
+1561780405802	Delete element
+1561781838534	Rename local variable 'context'
+1561781945291	Rename local variable 'container'
+1561781999387	Rename local variable 'dispatcher'
+1561782084542	Rename local variable 'dispatcherContext'
+1561782828672	Rename type 'WebAppConfig'
+1561783329282	Delete element
+1561783360763	Delete element
+1561783381739	Delete element
+1561784998631	Rename type 'AppController'
+1561786891697	Delete element
+1561787093367	Delete element
+1561788609828	Delete element
+1561788680366	Delete element
+1561788992760	Rename type 'UserProfileDao'
+1561789135665	Rename type 'UserProfileService'
+1561789163559	Rename type 'UserProfileServiceImpl'
