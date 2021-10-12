@@ -1,0 +1,100 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.hkicl.main</groupId>
+	<artifactId>main</artifactId>
+	<version>1</version>
+	<packaging>pom</packaging>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.5.0</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	<properties>
+		<jdk.version>1.8.0_301</jdk.version>
+		<spring.version>3.2.8.RELEASE</spring.version>
+		<spring.security.version>3.2.3.RELEASE</spring.security.version>
+		<jstl.version>1.2</jstl.version>
+		<mysql.connector.version>5.1.30</mysql.connector.version>
+	</properties>
+	<dependencyManagement>
+		<dependencies>
+
+			<!-- Spring 3 dependencies -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-core</artifactId>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-jdbc</artifactId>
+			</dependency>
+
+			<!-- Spring Security -->
+			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-web</artifactId>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-config</artifactId>
+			</dependency>
+
+			<!-- Spring Security JSP Taglib -->
+			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-taglibs</artifactId>
+			</dependency>
+
+			<!-- connect to mysql -->
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-webmvc</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-jetty</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.tomcat.embed</groupId>
+				<artifactId>tomcat-embed-jasper</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-security</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-oauth2-client</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-actuator</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.mybatis.spring.boot</groupId>
+				<artifactId>mybatis-spring-boot-starter</artifactId>
+				<version>2.2.0</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.springframework.security.oauth/spring-security-oauth2 -->
+			<dependency>
+				<groupId>org.springframework.security.oauth</groupId>
+				<artifactId>spring-security-oauth2</artifactId>
+				<version>2.5.1.RELEASE</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.springframework/spring-jms -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-jms</artifactId>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
