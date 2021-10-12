@@ -1,10 +1,9 @@
 package com.hkicl.cmuweb.controller;
 
-import com.hkicl.ncmu.model.User;
+import com.hkicl.core.model.User;
 
 public class UserController {
-	public void getAll()
-	{
+	public void getAll() {
 		User user = new User();
 		user.getAuthorities();
 	}

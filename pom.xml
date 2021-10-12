@@ -9,6 +9,7 @@
 		<module>cmurpt</module>
 		<module>cmuweb</module>
 		<module>ncmu</module>
+		<module>core</module>
 	</modules>
 	<packaging>pom</packaging>
 	<parent>
@@ -26,7 +27,6 @@
 	</properties>
 	<dependencyManagement>
 		<dependencies>
-
 			<!-- Spring 3 dependencies -->
 			<dependency>
 				<groupId>org.springframework</groupId>
@@ -102,4 +102,32 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>compile</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			</dependency>
+	</dependencies>
 </project>

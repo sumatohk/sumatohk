@@ -1,4 +1,4 @@
-package com.hkicl.ncmu.model;
+package com.hkicl.core.model;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
