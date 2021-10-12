@@ -11,21 +11,23 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import com.hkicl.core.model.User;
 import com.hkicl.ncmu.dao.UserDAO;
-import com.hkicl.ncmu.model.User;
 
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
 	protected Logger logger = LogManager.getLogger(CustomUserDetailsService.class);
 	@Autowired
 	private UserDAO userDAO;
+
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		User user = this.userDAO.getUser(username);
 		this.logger.info("loadUserByUsername\t username {}, password {}", user.getUsername(), user.getPassword());
-		Collection<GrantedAuthority> authorities=this.userDAO.getRoles(username);
+		Collection<GrantedAuthority> authorities = this.userDAO.getRoles(username);
 		user.setAuthorities(authorities);
-		UserDetails userDetial = (UserDetails)new org.springframework.security.core.userdetails.User(user.getUsername(),user.getPassword(),user.getAuthorities());
+		UserDetails userDetial = (UserDetails) new org.springframework.security.core.userdetails.User(
+				user.getUsername(), user.getPassword(), user.getAuthorities());
 		return userDetial;
 	}
 }

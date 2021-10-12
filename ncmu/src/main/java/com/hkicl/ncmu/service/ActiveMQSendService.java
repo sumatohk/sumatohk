@@ -19,8 +19,8 @@ import org.springframework.jms.core.JmsTemplate;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.stereotype.Component;
 
-import com.hkicl.ncmu.model.CmuMessage;
-import com.hkicl.ncmu.model.User;
+import com.hkicl.core.model.CmuMessage;
+import com.hkicl.core.model.User;
 
 @Component
 public class ActiveMQSendService {

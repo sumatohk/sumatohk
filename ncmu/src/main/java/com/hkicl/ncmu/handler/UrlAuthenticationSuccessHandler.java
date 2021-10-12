@@ -13,7 +13,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.stereotype.Component;
 
-import com.hkicl.ncmu.model.ActiveUserStore;
+import com.hkicl.core.model.ActiveUserStore;
 
 @Component
 public class UrlAuthenticationSuccessHandler implements AuthenticationSuccessHandler {

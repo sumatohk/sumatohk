@@ -23,7 +23,7 @@ import org.springframework.web.servlet.view.JstlView;
 @EnableWebMvc
 @Configuration
 @ComponentScan({ "com.hkicl.ncmu.*" })
-@Import({ SecurityConfig.class })
+@Import({ SecurityConfig.class, MultithreadScheduleTask.class, ScheduleConfiguration.class })
 public class CMUWebAppConfig {
 	protected Logger logger = LogManager.getRootLogger();
 	String BROKER_URL = "tcp://139.162.63.146:61616??jms.useAsyncSend=true";

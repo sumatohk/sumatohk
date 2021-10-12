@@ -15,7 +15,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Repository;
 
-import com.hkicl.ncmu.model.User;
+import com.hkicl.core.model.User;
 
 @Repository
 public class UserDAO {

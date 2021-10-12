@@ -10,7 +10,7 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.hkicl.ncmu.model.ActiveUserStore;
+import com.hkicl.core.model.ActiveUserStore;
 
 @Component
 public class LoggedUser implements HttpSessionBindingListener {

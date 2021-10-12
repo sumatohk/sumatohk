@@ -11,7 +11,7 @@ import org.springframework.jms.annotation.JmsListener;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;
 
-import com.hkicl.ncmu.model.CmuMessage;
+import com.hkicl.core.model.CmuMessage;
 
 @Service
 public class ActiveMQReceiveService {

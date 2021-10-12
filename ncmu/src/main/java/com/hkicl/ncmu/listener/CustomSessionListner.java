@@ -10,8 +10,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.hkicl.core.model.ActiveUserStore;
 import com.hkicl.ncmu.component.LoggedUser;
-import com.hkicl.ncmu.model.ActiveUserStore;
 
 @WebListener
 public class CustomSessionListner implements HttpSessionBindingListener {

@@ -12,7 +12,7 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.hkicl.ncmu.model.VerifyCode;
+import com.hkicl.core.model.VerifyCode;
 
 @RestController
 public class VerifyCodeController {

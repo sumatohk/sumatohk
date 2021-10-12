@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Hello world!
  *
  */
-@SpringBootApplication(scanBasePackages = { "com.hkicl.ncmu" })
+@SpringBootApplication(scanBasePackages = { "com.hkicl" })
 
 public class NCMUApp {
 	public static void main(String[] args) {
