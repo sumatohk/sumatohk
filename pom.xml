@@ -5,6 +5,11 @@
 	<groupId>com.hkicl.main</groupId>
 	<artifactId>main</artifactId>
 	<version>1</version>
+	<modules>
+		<module>cmurpt</module>
+		<module>cmuweb</module>
+		<module>ncmu</module>
+	</modules>
 	<packaging>pom</packaging>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
