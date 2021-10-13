@@ -28,7 +28,6 @@ public class ActiveMQSendService {
 	protected Logger logger = LogManager.getLogger(ActiveMQSendService.class);
 	@Autowired
 	Connection jmsConnection;
-
 	@SuppressWarnings("serial")
 	public void sendMessage(String queueName) {
 		try {

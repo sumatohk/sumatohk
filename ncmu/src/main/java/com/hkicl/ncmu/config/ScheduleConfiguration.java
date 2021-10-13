@@ -18,6 +18,8 @@ public class ScheduleConfiguration {
 	ActiveMQSendService activeMQSendService;
 	@Autowired
 	public JmsTemplate jmsTemplate;
+	@Autowired
+	Application application;
 	@Scheduled(fixedDelay = 1000)
 	public void printMsg() {
 		//System.out.println("HELLO WORLD!");
@@ -25,6 +27,6 @@ public class ScheduleConfiguration {
 	}
 	@Scheduled(fixedDelay = 5000)
 	public void sendMQMessage() {
-		activeMQSendService.sendMessage("mytest",this.jmsTemplate);
+		activeMQSendService.sendMessage(application.queue,this.jmsTemplate);
 	}
 }

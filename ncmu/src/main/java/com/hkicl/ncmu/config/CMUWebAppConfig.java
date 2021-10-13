@@ -7,6 +7,7 @@ import javax.jms.Session;
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -26,17 +27,16 @@ import org.springframework.web.servlet.view.JstlView;
 @Import({ SecurityConfig.class, MultithreadScheduleTask.class, ScheduleConfiguration.class })
 public class CMUWebAppConfig {
 	protected Logger logger = LogManager.getRootLogger();
-	String BROKER_URL = "tcp://139.162.63.146:61616??jms.useAsyncSend=true";
-	String BROKER_USERNAME = "admin";
-	String BROKER_PASSWORD = "admin";
+	@Autowired
+	Application application;
 
 	@Bean(name = "dataSource")
 	public DriverManagerDataSource dataSource() {
 		DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
-		driverManagerDataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-		driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/formsdb");
-		driverManagerDataSource.setUsername("forms");
-		driverManagerDataSource.setPassword("P@ssw0rd");
+		driverManagerDataSource.setDriverClassName(application.jdbc_driver);
+		driverManagerDataSource.setUrl(application.jdbc_url);
+		driverManagerDataSource.setUsername(application.jdbc_user);
+		driverManagerDataSource.setPassword(application.jdbc_pass);
 		return driverManagerDataSource;
 	}
 
@@ -52,9 +52,9 @@ public class CMUWebAppConfig {
 	@Bean
 	public ActiveMQConnectionFactory connectionFactory() {
 		ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory();
-		connectionFactory.setBrokerURL(BROKER_URL);
-		connectionFactory.setPassword(BROKER_USERNAME);
-		connectionFactory.setUserName(BROKER_PASSWORD);
+		connectionFactory.setBrokerURL(application.broker_url);
+		connectionFactory.setPassword(application.broker_user);
+		connectionFactory.setUserName(application.broker_pass);
 		connectionFactory.setSendAcksAsync(true);
 		return connectionFactory;
 	}
