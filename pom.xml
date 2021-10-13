@@ -6,10 +6,10 @@
 	<artifactId>main</artifactId>
 	<version>1</version>
 	<modules>
+		<module>core</module>
 		<module>cmurpt</module>
 		<module>cmuweb</module>
 		<module>ncmu</module>
-		<module>core</module>
 	</modules>
 	<packaging>pom</packaging>
 	<parent>

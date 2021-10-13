@@ -16,5 +16,10 @@
 			<artifactId>ncmu</artifactId>
 			<version>1</version>
 		</dependency>
+		<dependency>
+			<groupId>com.hkicl.main</groupId>
+			<artifactId>core</artifactId>
+			<version>1</version>
+		</dependency>
 	</dependencies>
 </project>
